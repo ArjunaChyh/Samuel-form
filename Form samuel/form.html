@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Nota Pembelian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>Formulir Nota Pembelian Samuel</title>
+<style>
+    body {
+        position: absolute;
+        background-color: black;
+        background size: cover;
+    }
+   h2 {
+    text-align: center;
+    border-bottom: 2px dashed white;
+}
+    .schedule-container {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    border: 2px dashed white;
+}
+input[type="text"], input[type="number"], input[type="date"], select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+        }
+</style>
+<body>
+    <div class="schedule-container">
+        <h2>Formulir Nota Pembelian</h2>
+        <br></br>
+        <form>
+            <label>Nama Pembeli</label>
+            <br>
+<input type="text" id="nama" placeholder="ketikan Nama Kamu...">
+<br></br>
+<label>Alamat Pembeli</label>
+<br>
+ <input type="text" id="alamat" placeholder="Ketikan Alamatmu">
+ <br></br>
+ <label>Kode Pos</label>
+ <br>
+<input type="text" id="kodePos" placeholder="ketikan atau pilih kode pos Alamatmu">
+<br></br>
+<label>Tanggal Beli</label>
+<br>
+<input type="date" Placeholder="Ketik Tanggal Pembelian Kamu...">
+<br></br>
+<label>Pembayaran :</label>
+<div class="radio-group">
+<input type="radio" id="Lunas" name="Pembayaran" value="Lunas">
+<label for="lunas">Lunas</label>
+<input type="radio" id="Belum Lunas" name="pembayaran" value="Belum Lunas">
+<label for="Belum Lunas">Belum Lunas</label>
+<br></br>
+<label>DP :</label>
+<br>
+            </div>
+ <input type="text" id="dp" placeholder="Ketikan Angka Uang DP Kamu...">
+ <br></br>
+ <label>Jenis Pembayaran :</label>
+ <br>
+<select id="jenisPembayaran"> 
+                <option value="" disabled selected>Pilih</option>
+                <option value="Tunai">Tunai</option>
+                <option value="Kartu">Kartu</option>
+            </select>
+            <br></br>
+            <label>Menu :</label>
+            <br>
+            <div class="menu-group">
+                <input type="checkbox" id="Mie Goreng">
+                <label for="Mie Goreng">Mie Goreng</label>
+                 <input type="number" placeholder="Ketikan Angka Pesanan">
+                 <br>
+                <input type="checkbox" id="Nasi Goreng">
+                <label for="Nasi Goreng">Nasi Goreng</label>
+                 <input type="number" placeholder="Ketikan Angka Pesanan">
+                 <br>
+                <input type="checkbox" id="jeruk">
+                <label for="Jeruk">Jeruk</label>
+                 <input type="number" placeholder="Ketikan Angka Pesanan">
+                 <br>
+                <input type="checkbox" id="Teh">
+                <label for="Teh">Teh</label>
+                <input type="number" placeholder="Ketikan Angka Pesanan">
+            </div>
+            <br></br>
+            
+            <div class="button-group">
+                <button type="reset">Clear</button>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
